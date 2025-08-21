@@ -23,7 +23,7 @@ export default function RandomSuggestion() {
         {place && (
           <button
             onClick={() => dispatch(setSuggestion(null))}
-            className="text-xs underline underline-offset-4"
+            className="text-xs underline underline-offset-4 cursor-pointer text-red-800"
           >
             Clear
           </button>
