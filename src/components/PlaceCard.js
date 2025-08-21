@@ -14,7 +14,7 @@ export default function PlaceCard({ place }) {
           <Image
             width={400}
             height={400}
-            src={`${place.image}`}
+            src={`/small/${place.image}`}
             alt={place.name}
             className="h-full w-full object-cover transition-transform group-hover:scale-[1.03]"
             loading="lazy"
