@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchPlaces } from '@/store/placesSlice';
 import PlaceCard from '@/components/PlaceCard';
 import RandomSuggestion from '@/components/RandomSuggestion';
+import { Analytics } from "@vercel/analytics/next"
 
 export default function HomePage() {
   const dispatch = useDispatch();
@@ -28,7 +29,7 @@ export default function HomePage() {
           Visited: <span className="font-semibold">{visitedCount}</span>
         </div>
       </section>
-
+      <Analytics/>
       <RandomSuggestion />
 
       {status === 'loading' && <div className="text-sm">Loading places…</div>}
