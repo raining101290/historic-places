@@ -37,7 +37,7 @@ export default function RandomSuggestion() {
             <div>
               <div className="text-xs font-bold tracking-wide text-white mb-3">Suggested place</div>
               <div className="font-semibold text-gray-100 flex">
-                  <Image className='border border-gray-400 rounded' alt={place.name} width={100} height={70} src={place.image} />
+                  <Image className='border border-gray-400 rounded' alt={place.name} width={100} height={70} src={`/small/${place.image}`} />
                   <p className="ml-2">{place.name}</p>
               </div>
             </div>

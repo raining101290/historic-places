@@ -52,7 +52,6 @@ export default function PlaceDetails() {
             src={`/large/${place.image}`}
             alt={place.name}
             className="w-full object-cover"
-            unoptimized
         />
       </div>
       <p className="text-slate-700">{place.description}</p>
